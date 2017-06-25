@@ -1,7 +1,8 @@
-package com.niortreactnative
+package com.niortreactnative.activities
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.niortreactnative.R
 
 class MainActivity : AppCompatActivity() {
 
