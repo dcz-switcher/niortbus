@@ -1,12 +1,9 @@
 package com.niortreactnative.activities
 
-import android.app.Fragment
-import android.app.FragmentManager
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.niortreactnative.R
 import com.niortreactnative.fragments.LineListFragment
-import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
