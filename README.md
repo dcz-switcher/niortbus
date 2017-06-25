@@ -1,4 +1,4 @@
-[niort bus](https://play.google.com/store/apps/details?id=com.niortreactnative)est une application non officielle qui simplifie l'usage du réseau de transport en commun TAN de la ville de Niort  
+[niort bus](https://play.google.com/store/apps/details?id=com.niortreactnative) est une application non officielle qui simplifie l'usage du réseau de transport en commun TAN de la ville de Niort  
 
 ## Pourquoi cette application ?
 
@@ -20,5 +20,5 @@ Sans aucun financement, je ne peux faire profiter les utilisateurs d'iPhone de l
 
 ## Roadmap
 
-La [roadmap](https://trello.com/b/9aAWqQzV/niort-bus)de l'application est accessible à tous sur Trello
+La [roadmap](https://trello.com/b/9aAWqQzV/niort-bus) de l'application est accessible à tous sur Trello
 
