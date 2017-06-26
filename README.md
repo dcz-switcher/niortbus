@@ -2,7 +2,7 @@
 
 ## Pourquoi cette application ?
 
-L'idée de créer cette application m'est venue en entendant des collégiens se plaindre du site mobilite79.fr et de leur difficulté à connaître les horaires des bus.
+L'idée de créer cette application m'est venue en entendant des collégiens se plaindre du site mobilite79.fr en situation de mobilité et de leur difficulté à connaître les horaires des bus.
 
 Ils évoquaient également l'impossibilité de consulter le site sur mobile sans disposer de forfait data.
 
