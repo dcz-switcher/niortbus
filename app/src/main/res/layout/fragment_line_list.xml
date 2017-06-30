@@ -14,12 +14,14 @@
 
         <TextView
             android:id="@+id/textView"
+            style="@style/line_tab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TextView"/>
 
         <TextView
             android:id="@+id/textView2"
+            style="@style/line_tab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TextView"/>
