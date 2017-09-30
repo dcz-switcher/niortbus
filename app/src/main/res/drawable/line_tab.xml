@@ -11,6 +11,6 @@
         android:topLeftRadius="@dimen/line_tab_corner_radius"
         android:topRightRadius="@dimen/line_tab_corner_radius"/>
 
-    <solid android:color="@color/colorPrimary"/>
+    <solid android:color="@color/line1"/>
 
 </shape>
