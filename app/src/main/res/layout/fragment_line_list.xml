@@ -1,8 +1,9 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:tools="http://schemas.android.com/tools"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent"
-             tools:context="com.niortreactnative.fragments.LineListFragment">
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="20dp"
+            tools:context="com.niortreactnative.fragments.LineListFragment">
 
 
     <LinearLayout
@@ -17,13 +18,16 @@
             style="@style/line_tab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView"/>
+            android:layout_marginEnd="20dp"
+            android:text="@string/line1_identifier"
+            android:textSize="@dimen/listLine_textSize"/>
 
         <TextView
             android:id="@+id/textView2"
             style="@style/line_tab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView"/>
+            android:text="@string/line1_label"
+            android:textSize="@dimen/listLine_textSize"/>
     </LinearLayout>
 </ScrollView>

@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name">Niort bus</string>
 
+    <string name="line1_identifier">1</string>
+    <string name="line1_label">Université - Chauray</string>
+
+
+
     <!-- to delete -->
     <string name="hello">Hello world</string>
 
