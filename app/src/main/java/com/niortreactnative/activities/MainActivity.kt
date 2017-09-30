@@ -7,9 +7,9 @@ import com.niortreactnative.fragments.LineListFragment
 
 class MainActivity : AppCompatActivity() {
 
-    val TAG_LINELIST_FRAGMENT = "tag_linelist_fragment"
+    private val TAG_LINELIST_FRAGMENT = "tag_linelist_fragment"
 
-    var lineListFragment:LineListFragment? = null
+    private var lineListFragment:LineListFragment? = null
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
