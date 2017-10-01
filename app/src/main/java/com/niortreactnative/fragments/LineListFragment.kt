@@ -38,9 +38,11 @@ class LineListFragment : Fragment() {
 
 
     private fun addListeners() {
+        /*
         this.line_1.setOnClickListener ({view ->
             Log.d(TAG, ": click :-)")
         })
+         */
     }
 
 

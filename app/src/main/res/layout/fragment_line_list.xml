@@ -9,17 +9,24 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:divider="?attr/dividerVertical"
+        android:dividerPadding="2dp"
+        android:orientation="vertical"
+        android:showDividers="middle">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:layout_margin="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:clickable="true"
+            android:focusable="true"
             android:orientation="horizontal">
 
             <TextView
                 android:layout_width="60dp"
                 android:layout_height="60dp"
+                android:layout_marginStart="8dp"
                 android:background="@color/line1"
                 android:gravity="center"
                 android:text="@string/line1_identifier"
@@ -29,7 +36,6 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/line1_secondary"
                 android:orientation="vertical">
 
                 <TextView
@@ -40,7 +46,6 @@
                     android:paddingEnd="16dp"
                     android:paddingStart="16dp"
                     android:text="@string/line1_departure"
-                    android:textColor="@android:color/white"
                     android:textSize="@dimen/listLine_textSize"/>
 
                 <TextView
@@ -51,7 +56,6 @@
                     android:paddingEnd="16dp"
                     android:paddingStart="16dp"
                     android:text="@string/line1_arrival"
-                    android:textColor="@android:color/white"
                     android:textSize="@dimen/listLine_textSize"/>
             </LinearLayout>
 
@@ -75,7 +79,6 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/line2_secondary"
                 android:orientation="vertical">
 
                 <TextView
@@ -86,7 +89,6 @@
                     android:paddingEnd="16dp"
                     android:paddingStart="16dp"
                     android:text="@string/line2_departure"
-                    android:textColor="@android:color/white"
                     android:textSize="@dimen/listLine_textSize"/>
 
                 <TextView
@@ -97,7 +99,6 @@
                     android:paddingEnd="16dp"
                     android:paddingStart="16dp"
                     android:text="@string/line2_arrival"
-                    android:textColor="@android:color/white"
                     android:textSize="@dimen/listLine_textSize"/>
             </LinearLayout>
 
@@ -121,7 +122,6 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/line3_secondary"
                 android:orientation="vertical">
 
                 <TextView
@@ -132,7 +132,6 @@
                     android:paddingEnd="16dp"
                     android:paddingStart="16dp"
                     android:text="@string/line3_departure"
-                    android:textColor="@android:color/white"
                     android:textSize="@dimen/listLine_textSize"/>
 
                 <TextView
@@ -143,7 +142,6 @@
                     android:paddingEnd="16dp"
                     android:paddingStart="16dp"
                     android:text="@string/line3_arrival"
-                    android:textColor="@android:color/white"
                     android:textSize="@dimen/listLine_textSize"/>
             </LinearLayout>
 
@@ -167,7 +165,6 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/line4_secondary"
                 android:orientation="vertical">
 
                 <TextView
@@ -178,7 +175,6 @@
                     android:paddingEnd="16dp"
                     android:paddingStart="16dp"
                     android:text="@string/line4_departure"
-                    android:textColor="@android:color/white"
                     android:textSize="@dimen/listLine_textSize"/>
 
                 <TextView
@@ -189,7 +185,6 @@
                     android:paddingEnd="16dp"
                     android:paddingStart="16dp"
                     android:text="@string/line4_arrival"
-                    android:textColor="@android:color/white"
                     android:textSize="@dimen/listLine_textSize"/>
             </LinearLayout>
 
@@ -213,7 +208,6 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/line5_secondary"
                 android:orientation="vertical">
 
                 <TextView
@@ -224,7 +218,6 @@
                     android:paddingEnd="16dp"
                     android:paddingStart="16dp"
                     android:text="@string/line5_departure"
-                    android:textColor="@android:color/white"
                     android:textSize="@dimen/listLine_textSize"/>
 
                 <TextView
@@ -235,7 +228,6 @@
                     android:paddingEnd="16dp"
                     android:paddingStart="16dp"
                     android:text="@string/line5_arrival"
-                    android:textColor="@android:color/white"
                     android:textSize="@dimen/listLine_textSize"/>
             </LinearLayout>
 
@@ -259,7 +251,6 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/line6_secondary"
                 android:orientation="vertical">
 
                 <TextView
@@ -270,7 +261,6 @@
                     android:paddingEnd="16dp"
                     android:paddingStart="16dp"
                     android:text="@string/line6_departure"
-                    android:textColor="@android:color/white"
                     android:textSize="@dimen/listLine_textSize"/>
 
                 <TextView
@@ -281,7 +271,6 @@
                     android:paddingEnd="16dp"
                     android:paddingStart="16dp"
                     android:text="@string/line6_arrival"
-                    android:textColor="@android:color/white"
                     android:textSize="@dimen/listLine_textSize"/>
             </LinearLayout>
 
@@ -305,7 +294,6 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/line7_secondary"
                 android:orientation="vertical">
 
                 <TextView
@@ -316,7 +304,6 @@
                     android:paddingEnd="16dp"
                     android:paddingStart="16dp"
                     android:text="@string/line7_departure"
-                    android:textColor="@android:color/white"
                     android:textSize="@dimen/listLine_textSize"/>
 
                 <TextView
@@ -327,13 +314,10 @@
                     android:paddingEnd="16dp"
                     android:paddingStart="16dp"
                     android:text="@string/line7_arrival"
-                    android:textColor="@android:color/white"
                     android:textSize="@dimen/listLine_textSize"/>
             </LinearLayout>
 
         </LinearLayout>
-
-
 
 
     </LinearLayout>
