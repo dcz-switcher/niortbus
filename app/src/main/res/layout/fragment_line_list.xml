@@ -7,27 +7,336 @@
 
 
     <LinearLayout
-        android:id="@+id/line_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/line_tab"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textView"
-            style="@style/line_tab"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="20dp"
-            android:text="@string/line1_identifier"
-            android:textSize="@dimen/listLine_textSize"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/textView2"
-            style="@style/line_tab"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/line1_label"
-            android:textSize="@dimen/listLine_textSize"/>
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/line1"
+                android:gravity="center"
+                android:text="@string/line1_identifier"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/listLine_textSize"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/line1_secondary"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="16dp"
+                    android:paddingStart="16dp"
+                    android:text="@string/line1_departure"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/listLine_textSize"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="16dp"
+                    android:paddingStart="16dp"
+                    android:text="@string/line1_arrival"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/listLine_textSize"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/line2"
+                android:gravity="center"
+                android:text="@string/line2_identifier"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/listLine_textSize"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/line2_secondary"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="16dp"
+                    android:paddingStart="16dp"
+                    android:text="@string/line2_departure"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/listLine_textSize"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="16dp"
+                    android:paddingStart="16dp"
+                    android:text="@string/line2_arrival"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/listLine_textSize"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/line3"
+                android:gravity="center"
+                android:text="@string/line3_identifier"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/listLine_textSize"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/line3_secondary"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="16dp"
+                    android:paddingStart="16dp"
+                    android:text="@string/line3_departure"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/listLine_textSize"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="16dp"
+                    android:paddingStart="16dp"
+                    android:text="@string/line3_arrival"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/listLine_textSize"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/line4"
+                android:gravity="center"
+                android:text="@string/line4_identifier"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/listLine_textSize"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/line4_secondary"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="16dp"
+                    android:paddingStart="16dp"
+                    android:text="@string/line4_departure"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/listLine_textSize"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="16dp"
+                    android:paddingStart="16dp"
+                    android:text="@string/line4_arrival"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/listLine_textSize"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/line5"
+                android:gravity="center"
+                android:text="@string/line5_identifier"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/listLine_textSize"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/line5_secondary"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="16dp"
+                    android:paddingStart="16dp"
+                    android:text="@string/line5_departure"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/listLine_textSize"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="16dp"
+                    android:paddingStart="16dp"
+                    android:text="@string/line5_arrival"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/listLine_textSize"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/line6"
+                android:gravity="center"
+                android:text="@string/line6_identifier"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/listLine_textSize"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/line6_secondary"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="16dp"
+                    android:paddingStart="16dp"
+                    android:text="@string/line6_departure"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/listLine_textSize"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="16dp"
+                    android:paddingStart="16dp"
+                    android:text="@string/line6_arrival"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/listLine_textSize"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/line7"
+                android:gravity="center"
+                android:text="@string/line7_identifier"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/listLine_textSize"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/line7_secondary"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="16dp"
+                    android:paddingStart="16dp"
+                    android:text="@string/line7_departure"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/listLine_textSize"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="16dp"
+                    android:paddingStart="16dp"
+                    android:text="@string/line7_arrival"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/listLine_textSize"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
     </LinearLayout>
+
+
 </ScrollView>

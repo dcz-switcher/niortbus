@@ -2,7 +2,32 @@
     <string name="app_name">Niort bus</string>
 
     <string name="line1_identifier">1</string>
-    <string name="line1_label">Université - Chauray</string>
+    <string name="line1_departure">Université</string>
+    <string name="line1_arrival">Chauray</string>
+
+    <string name="line2_identifier">2</string>
+    <string name="line2_departure">Brizeaux CAF</string>
+    <string name="line2_arrival">Bessines</string>
+
+    <string name="line3_identifier">3</string>
+    <string name="line3_departure">Pôle Universitaire</string>
+    <string name="line3_arrival">Terre de Sports</string>
+
+    <string name="line4_identifier">4</string>
+    <string name="line4_departure">St Pezenne</string>
+    <string name="line4_arrival">Aiffres</string>
+
+    <string name="line5_identifier">5</string>
+    <string name="line5_departure">Chaintre Brûlée</string>
+    <string name="line5_arrival">Chauray</string>
+
+    <string name="line6_identifier">6</string>
+    <string name="line6_departure">St Liguaire</string>
+    <string name="line6_arrival">Surimeau</string>
+
+    <string name="line7_identifier">7</string>
+    <string name="line7_departure">Pied de Fond</string>
+    <string name="line7_arrival">Brizeaux</string>
 
 
 
