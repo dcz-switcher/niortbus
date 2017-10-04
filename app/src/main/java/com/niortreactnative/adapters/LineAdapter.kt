@@ -2,6 +2,7 @@ package com.niortreactnative.adapters
 
 
 import android.content.Context
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -16,8 +17,8 @@ import com.niortreactnative.R
  */
 class LineAdapter(context:Context) : BaseAdapter() {
 
+    private val TAG = "LineAdapter"
 
-    private var list = arrayOf("Niort", "Grenoble", "St Pierre Oléron")
     private var lineList = arrayListOf<Line>()
 
 
@@ -27,17 +28,18 @@ class LineAdapter(context:Context) : BaseAdapter() {
     init{
         myInflator = LayoutInflater.from(context)
 
-        lineList.add(Line(1, "Université", "Chauray"))
+        /*
+        lineList.add(Line(1, "Université", "Chauray", 0x333333))
         lineList.add(Line(2, "Brizeau CAF", "Bessines"))
         lineList.add(Line(3, "Pôle Universitaire", "Terre de Sports"))
         lineList.add(Line(4, "St Pezenne", "Aiffres"))
         lineList.add(Line(5, "Chaintre Brûlée", "Chauray"))
         lineList.add(Line(6, "St Liguaire", "Surimeau"))
         lineList.add(Line(7, "Pied de Fond", "Brizeaux"))
+        */
     }
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
-
         var view:View
 
         if (convertView == null) {
@@ -52,11 +54,8 @@ class LineAdapter(context:Context) : BaseAdapter() {
 
         var line = lineList[position]
 
-
-        //departure.text = list[position]
         departure.text = line.departure
         arrival.text = line.arrival
-
 
         return view
     }

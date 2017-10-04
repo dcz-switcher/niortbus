@@ -1,18 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--
+android:background="?attr/selectableItemBackground"
+-->
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
+              android:background="@android:color/holo_orange_light"
+              android:clickable="true"
+              android:focusable="true"
+              android:orientation="horizontal"
               android:layout_width="match_parent"
-              android:layout_height="match_parent">
+              android:layout_height="60dp"
+              android:layout_marginBottom="8dp"
+              android:layout_marginTop="8dp">
 
     <TextView
-        android:id="@+id/line_departure"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/textview_default"/>
+        android:id="@+id/line_identifier"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:textSize="@dimen/listLine_textSize"
+        android:textColor="@android:color/white"/>
 
-    <TextView
-        android:id="@+id/line_arrival"
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/textview_default"/>
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/line_departure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/textview_default"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:textSize="@dimen/listLine_textSize"/>
+
+        <TextView
+            android:id="@+id/line_arrival"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/textview_default"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:textSize="@dimen/listLine_textSize"/>
+
+    </LinearLayout>
+
 </LinearLayout>
