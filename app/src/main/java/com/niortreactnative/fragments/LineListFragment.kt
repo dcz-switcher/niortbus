@@ -4,19 +4,13 @@ package com.niortreactnative.fragments
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.AdapterView
-import android.widget.ArrayAdapter
-import android.widget.LinearLayout
-import android.widget.SimpleAdapter
 
 
 import com.niortreactnative.R
-import com.niortreactnative.adapters.LineAdapter
 import com.niortreactnative.adapters.LineListAdapter
 import kotlinx.android.synthetic.main.fragment_line_list.*
 
