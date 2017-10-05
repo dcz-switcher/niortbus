@@ -26,12 +26,13 @@ android:background="?attr/selectableItemBackground"
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        >
 
         <TextView
             android:id="@+id/line_departure"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:text="@string/textview_default"
             android:layout_weight="1"
             android:gravity="center_vertical"
@@ -42,7 +43,7 @@ android:background="?attr/selectableItemBackground"
         <TextView
             android:id="@+id/line_arrival"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:text="@string/textview_default"
             android:layout_weight="1"
             android:gravity="center_vertical"

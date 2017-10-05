@@ -35,8 +35,6 @@ class LineListAdapter : RecyclerView.Adapter<LineListAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): ViewHolder {
 
-        Log.d(TAG, parent.toString())
-
         var view:View = LayoutInflater.from(parent?.context).inflate(R.layout.line_list_item, parent, false)
 
         return ViewHolder(view)

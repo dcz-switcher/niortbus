@@ -4,6 +4,7 @@ package com.niortreactnative.fragments
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.widget.LinearLayoutManager
+import android.support.v7.widget.RecyclerView
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -27,9 +28,7 @@ class LineListFragment : Fragment() {
 
     private val TAG = "LineListFragment"
 
-    private var _view:View? = null
-
-    lateinit private var lineAdapter:LineAdapter
+    lateinit private var _view:View
 
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?,
@@ -52,11 +51,6 @@ class LineListFragment : Fragment() {
 
 
     private fun populateLineList (){
-        /*
-        lineAdapter = LineAdapter(context)
-
-        line_list.adapter = lineAdapter
-         */
         line_list.layoutManager = LinearLayoutManager(context)
         line_list.adapter = LineListAdapter()
     }
