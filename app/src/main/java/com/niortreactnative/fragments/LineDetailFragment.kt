@@ -30,9 +30,9 @@ class LineDetailFragment : Fragment() {
         super.onResume()
 
         var stops = arrayListOf<Stop>()
-        stops.add(Stop("06:00"))
-        stops.add(Stop("07:00"))
-        stops.add(Stop("08:00"))
+        stops.add(Stop("Pôle Universitaire", arrayOf("06:00", "07:00", "08:00")))
+        stops.add(Stop("Pôle Atlantique", arrayOf("06:00", "07:00", "08:00")))
+        stops.add(Stop("Brêche quai B", arrayOf("06:00", "07:00", "08:00")))
 
         stop_list.layoutManager = LinearLayoutManager(context)
         stop_list.adapter = StopListAdapter(stops)

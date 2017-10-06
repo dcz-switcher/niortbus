@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Niort bus</string>
 
-    <string name="textview_default">Default value</string>
+    <string name="textview_default">no value yet</string>
 
 
     <string name="line1_identifier">1</string>

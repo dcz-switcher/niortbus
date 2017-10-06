@@ -30,7 +30,7 @@ class StopListAdapter(items:ArrayList<Stop>) : RecyclerView.Adapter<StopListAdap
     override fun onBindViewHolder(holder: ViewHolder?, position: Int) {
         holder?.stop = stops[position]
 
-        holder?.stopName?.text = stops[position].hour
+        holder?.stopName?.text = stops[position].name
     }
 
     override fun getItemCount(): Int {
