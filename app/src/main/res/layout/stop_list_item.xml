@@ -5,16 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <FrameLayout
-        android:layout_width="60px"
-        android:layout_height="match_parent">
-
-    </FrameLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/textview_default"
+        android:paddingEnd="10dp"
+        android:paddingStart="20dp"
+        android:src="@drawable/stop"/>
 
     <TextView
         android:id="@+id/stop_name"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/textview_default"/>
+        android:gravity="center_vertical"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:text="@string/textview_default"
+        android:textColor="@color/lineDetail"
+        android:textSize="@dimen/lineDetail_stop"/>
 
 </LinearLayout>

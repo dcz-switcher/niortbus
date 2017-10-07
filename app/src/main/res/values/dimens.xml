@@ -4,4 +4,6 @@
 
     <dimen name="listLine_textSize">20sp</dimen>
 
+    <dimen name="lineDetail_stop">22sp</dimen>
+
 </resources>
