@@ -1,6 +1,7 @@
 package com.niortreactnative.adapters
 
 import android.support.v7.widget.RecyclerView
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -13,6 +14,7 @@ import com.niortreactnative.R
 
 class HourListAdapter(hours:Array<String>) : RecyclerView.Adapter<HourListAdapter.ViewHolder>(){
 
+    private val TAG = "HourListAdapter"
 
     private var hours = hours
 
@@ -24,6 +26,10 @@ class HourListAdapter(hours:Array<String>) : RecyclerView.Adapter<HourListAdapte
 
     override fun onBindViewHolder(holder: ViewHolder?, position: Int) {
         holder?.hour?.text = hours[position]
+
+        holder?.itemView?.setOnClickListener {
+            Log.d(TAG, "tap on " + hours[position])
+        }
     }
 
     override fun getItemCount(): Int {
