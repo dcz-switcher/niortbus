@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -17,5 +17,10 @@
         android:text="@string/textview_default"
         android:textColor="@color/lineDetail"
         android:textSize="@dimen/lineDetail_stop"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/hour_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>

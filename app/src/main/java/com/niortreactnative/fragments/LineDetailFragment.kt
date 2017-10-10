@@ -30,7 +30,7 @@ class LineDetailFragment : Fragment() {
         super.onResume()
 
         var stops = arrayListOf<Stop>()
-        stops.add(Stop("Pôle Universitaire", arrayOf("06:00", "07:00", "08:00")))
+        stops.add(Stop("Pôle Universitaire", arrayOf("06:00", "07:00", "08:00", "09:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00")))
         stops.add(Stop("Pôle Atlantique", arrayOf("06:00", "07:00", "08:00")))
         stops.add(Stop("Brêche quai B", arrayOf("06:00", "07:00", "08:00")))
 
