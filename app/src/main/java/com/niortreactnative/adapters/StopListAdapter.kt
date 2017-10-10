@@ -23,6 +23,8 @@ class StopListAdapter(items:ArrayList<Stop>) : RecyclerView.Adapter<StopListAdap
 
     private var stops:List<Stop> = items
 
+    private var viewHolderSelectorOpen:ViewHolder? = null
+
 
     override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): ViewHolder {
 
@@ -36,14 +38,21 @@ class StopListAdapter(items:ArrayList<Stop>) : RecyclerView.Adapter<StopListAdap
         holder?.stop = stops[position]
 
         holder?.stopName?.text = stops[position].name
+        holder?.hourList?.layoutManager = LinearLayoutManager(null, LinearLayout.HORIZONTAL, false)
 
         holder?.itemView?.setOnClickListener {
             Log.d(TAG, "click ;-)")
+
+            if (viewHolderSelectorOpen != null) {
+                viewHolderSelectorOpen?.hourList?.adapter = null
+            }
+
+            holder?.hourList?.adapter = HourListAdapter(stops[position].hours)
+            viewHolderSelectorOpen = holder
         }
 
-        holder?.hourList?.layoutManager = LinearLayoutManager(null, LinearLayout.HORIZONTAL, false)
-        holder?.hourList?.adapter = HourListAdapter(stops[position].hours)
     }
+
 
     override fun getItemCount(): Int {
         return stops.size
