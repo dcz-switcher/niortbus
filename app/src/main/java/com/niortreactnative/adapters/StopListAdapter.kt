@@ -47,7 +47,7 @@ class StopListAdapter(items:ArrayList<Stop>) : RecyclerView.Adapter<StopListAdap
                 viewHolderSelectorOpen?.hourList?.adapter = null
             }
 
-            holder?.hourList?.adapter = HourListAdapter(stops[position].hours)
+            holder.hourList.adapter = HourListAdapter(stops[position].hours)
             viewHolderSelectorOpen = holder
         }
 

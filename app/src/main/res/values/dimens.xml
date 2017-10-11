@@ -5,5 +5,6 @@
     <dimen name="listLine_textSize">20sp</dimen>
 
     <dimen name="lineDetail_stop">22sp</dimen>
+    <dimen name="lineDetail_identifier">30sp</dimen>
 
 </resources>
