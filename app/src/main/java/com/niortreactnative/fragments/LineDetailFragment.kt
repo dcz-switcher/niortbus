@@ -7,11 +7,13 @@ import android.support.v7.widget.LinearLayoutManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ArrayAdapter
 
 import com.niortreactnative.R
 import com.niortreactnative.adapters.Stop
 import com.niortreactnative.adapters.StopListAdapter
 import kotlinx.android.synthetic.main.fragment_line_detail.*
+import java.util.*
 
 
 /**
@@ -36,6 +38,15 @@ class LineDetailFragment : Fragment() {
 
         stop_list.layoutManager = LinearLayoutManager(context)
         stop_list.adapter = StopListAdapter(stops)
+
+        // load period spinner
+        var periodArray = arrayOf("lundi > vendredi", "samedi", "dimanche")
+
+        var periodAdapter = ArrayAdapter<String>(this.context, android.R.layout.simple_spinner_item, periodArray)
+        periodAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+
+        period_selector.adapter = periodAdapter
+
     }
 
 
