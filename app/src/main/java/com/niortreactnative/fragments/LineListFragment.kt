@@ -11,6 +11,7 @@ import android.view.ViewGroup
 
 
 import com.niortreactnative.R
+import com.niortreactnative.adapters.Line
 import com.niortreactnative.adapters.LineListAdapter
 import com.niortreactnative.interfaces.AdapterCallback
 import kotlinx.android.synthetic.main.fragment_line_list.*
@@ -27,8 +28,9 @@ class LineListFragment : Fragment(), AdapterCallback{
 
     lateinit private var _view:View
 
-    override fun onAdapterCallback() {
+    override fun onAdapterCallback(line:Line) {
         Log.d(TAG, "log from Fragment !")
+        Log.d(TAG, "line departure is " + line.departure)
     }
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?,

@@ -69,7 +69,7 @@ class LineListAdapter(adapterCallback: AdapterCallback) : RecyclerView.Adapter<L
                 Log.d(TAG, "clicked")
                 Log.d(TAG, lineList[position].jsonResource.toString())
 
-                mAdapterCallback.onAdapterCallback()
+                mAdapterCallback.onAdapterCallback(lineList[position])
             }
         }
     }
