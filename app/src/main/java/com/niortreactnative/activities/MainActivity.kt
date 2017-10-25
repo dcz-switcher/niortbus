@@ -29,8 +29,10 @@ class MainActivity : AppCompatActivity() {
         }
 
         //todo manager navigation between views
+        /*
         supportFragmentManager.beginTransaction()
                 .replace(R.id.fragment_stack, LineDetailFragment(), TAG_LINEDETAIL_FRAGMENT)
                 .commit()
+        */
     }
 }

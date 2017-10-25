@@ -12,18 +12,24 @@ import android.view.ViewGroup
 
 import com.niortreactnative.R
 import com.niortreactnative.adapters.LineListAdapter
+import com.niortreactnative.interfaces.AdapterCallback
 import kotlinx.android.synthetic.main.fragment_line_list.*
+
+
 
 
 /**
  * A simple [Fragment] subclass.
  */
-class LineListFragment : Fragment() {
+class LineListFragment : Fragment(), AdapterCallback{
 
     private val TAG = "LineListFragment"
 
     lateinit private var _view:View
 
+    override fun onAdapterCallback() {
+        Log.d(TAG, "log from Fragment !")
+    }
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
@@ -38,6 +44,7 @@ class LineListFragment : Fragment() {
 
         Log.d(TAG, "on resume")
 
+
         populateLineList()
 
         addListeners()
@@ -46,7 +53,7 @@ class LineListFragment : Fragment() {
 
     private fun populateLineList (){
         line_list.layoutManager = LinearLayoutManager(context)
-        line_list.adapter = LineListAdapter()
+        line_list.adapter = LineListAdapter(this)
     }
 
 
