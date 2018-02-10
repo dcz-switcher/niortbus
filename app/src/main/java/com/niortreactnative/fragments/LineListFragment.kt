@@ -1,6 +1,7 @@
 package com.niortreactnative.fragments
 
 
+import android.content.Context
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.widget.LinearLayoutManager
@@ -26,11 +27,29 @@ class LineListFragment : Fragment(), AdapterCallback{
 
     private val TAG = "LineListFragment"
 
-    lateinit private var _view:View
+    private lateinit var _view:View
+
+    lateinit var mCallback:OnLineSelectedListener
+
+
+    interface OnLineSelectedListener {
+        fun onLineSelected(line:Line)
+    }
+
+
+    override fun onAttach(context: Context?) {
+        super.onAttach(context)
+
+        if (context !is OnLineSelectedListener) {
+            Log.e(TAG, "Failed cast :-(")
+            throw ClassCastException(context.toString() + " must implement OnLineSelecteeListener")
+        } else {
+            mCallback = context
+        }
+    }
 
     override fun onAdapterCallback(line:Line) {
-        Log.d(TAG, "log from Fragment !")
-        Log.d(TAG, "line departure is " + line.departure)
+        mCallback.onLineSelected(line)
     }
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?,
